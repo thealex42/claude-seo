@@ -56,10 +56,6 @@ ALLOWLIST = {
         "scripts/metadata_template.py",
         '    return description[len(core):].strip(" -' + EN_DASH + EM_DASH + ':|.")',
     ),
-    (
-        "scripts/sync_flow.py",
-        '        "# flow-prompts.lock ' + EM_DASH + ' SHA-256 baseline for synced FLOW prompts",',
-    ),
 }
 
 

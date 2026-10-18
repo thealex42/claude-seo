@@ -498,7 +498,6 @@ FLOW framework integration: evidence-led prompts for the Find, Leverage, Optimiz
 /seo flow win https://example.com/page
 /seo flow local https://example.com
 /seo flow prompts
-/seo flow sync
 ```
 
 **41 prompts** sourced from FLOW (CC BY 4.0). Each prompt is grounded in a specific evidence source (SERP data, GSC, GA4, customer interviews) with attribution preserved.

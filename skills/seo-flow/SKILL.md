@@ -39,7 +39,6 @@ Load prompt files on demand, only for the stage the user requests.
 | `/seo flow win [url]` | Win-stage: BOFU, conversion rate, dual-surface scorecard (3 prompts) |
 | `/seo flow local [url]` | Local-stage: GBP optimization, meta, title tags, local audits (11 prompts) |
 | `/seo flow prompts` | Full index of all 41 prompts (stage, name, trigger conditions) |
-| `/seo flow sync` | Pull latest prompt files from github.com/AgriciDaniel/flow |
 
 ---
 
@@ -80,11 +79,6 @@ Load prompt files on demand, only for the stage the user requests.
 ### On `/seo flow prompts`
 1. Read `references/prompts/README.md`
 2. Display the full index: all 41 prompts with stage, name, trigger conditions
-
-### On `/seo flow sync`
-1. Run: `"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run sync_flow.py`
-2. Display the JSON summary (files added, updated, unchanged)
-3. Show attribution notice after sync completes
 
 ---
 
@@ -130,7 +124,5 @@ Do not omit or modify the attribution.
 
 | Scenario | Action |
 |----------|--------|
-| `references/flow-framework.md` missing | "FLOW reference files not synced. Run: `/seo flow sync`" |
-| Prompt file missing | "Run `/seo flow sync` to pull the latest prompts from the FLOW repo." |
-| `sync_flow.py` network error | Display the script's stderr. Check rate limits: `gh api rate_limit`. |
-| `sync_flow.py` auth error | Run `gh auth login` then retry. |
+| `references/flow-framework.md` missing | "FLOW reference files are missing from the plugin. Reinstall the plugin." |
+| Prompt file missing | "This FLOW prompt is not bundled with the plugin. Reinstall the plugin." |
